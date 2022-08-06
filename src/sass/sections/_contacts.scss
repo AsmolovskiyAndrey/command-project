@@ -2,11 +2,11 @@
 .contacts {
     background-image: linear-gradient(to top, #fff5f6 75%, #ffffff 25%);
 
-    @media screen and(min-width:--tablet) {
+    @media screen and(min-width: 768px) {
         background-image: linear-gradient(to top, #fff5f6 80%, #ffffff 20%);
     }
 
-    @media screen and(min-width:--comp) {
+    @media screen and(min-width: 1200px) {
         width: 100%;
         min-height: 382px;
         // background-image: url(../images/cont_drops_1200.png), linear-gradient(to top, $secondary-bg-color 80%, $main-bg-color 20%);
@@ -30,6 +30,15 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 20px; 
+
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        gap: 30px;
+        
+    }
 }
 
 .local__item {
@@ -38,7 +47,13 @@
     border-radius: 24px;
     padding: 40px 32px;
     flex: 1;
+
+    @media screen and (min-width: 1200px) {
+        padding: 40px;
+    }
+        
 }
+
 
 .local__place {
     padding: 0 25px;
@@ -49,6 +64,14 @@
     color: #ffffff;
     background-color: #f0d1a5;
     border-radius: 6px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        font-size: 16px;
+        padding: 0 16px;
+        margin-bottom: 32px;
+    }
 
     &--green {
         background-color: #c2e297;
@@ -57,22 +80,46 @@
 
 .local-top {
     
-    
+    padding: 20px 0 24px;
+    border-bottom: 1px solid #e1e1e1;
+
+    @media screen and (min-width: 768px) {
+        padding: 32px 0;
+    }
 
     &__city {
+        margin-bottom: 8px;
+    
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 12px;
+        }
+        @media screen and (min-width: 1200px) {
             margin-bottom: 8px;
+        }
     }
 
     &__descr {
         width: 179px;
         border-bottom: 1px solid #e1e1e1;
         padding: 20px 0 24px;
+
+        @media screen and (min-width: 678px) {
+            width: 158px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 250px;
+        }
     }
 }
 
 .local-schedule {
     border-bottom: 1px solid #e1e1e1;
     padding: 24px 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 32px 0;
+    }
 }
 
 .local__text {
@@ -82,6 +129,16 @@
     letter-spacing: 0.04em;
     line-height: 1.5;
     color: #907e82;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.66;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.83;
+    }
 
     &--black {
             color: #000000;
@@ -96,6 +153,10 @@
 
 .local-contacts {
     padding-top: 24px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+    }
 }
 
 .local-contacts__link {
@@ -117,6 +178,16 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 32px;
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        gap: 15px;
+        margin-top: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 60px;
+    }
     // background: #D41342;
     // border-radius: 22px;
     // border: none;
