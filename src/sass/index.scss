@@ -1,6 +1,10 @@
 @import './common';
 @import './vars';
+@import './mixins';
 @import './main';
+
+@import './components/buttons';
+
 @import './sections/hero-header';
 @import './sections/products';
 @import './sections/about';
