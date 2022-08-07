@@ -1,3 +1,33 @@
-<section class="">
-  <div class="container-top"></div>
+<section class="hero">
+  <div class="container-top hero-container">
+    <div class="hero__text">
+      <h1 class="hero__title">
+        ice cream<br />
+        made with<br />
+        <span class="hero__title--different-colour">passion</span>
+      </h1>
+      <ul class="hero__links">
+        <li class="hero__li">Products</li>
+        <li class="hero__li hero__li--second-color">How it’s made?</li>
+      </ul>
+    </div>
+    <img
+      class="hero__ice"
+      srcset="
+        ./images/img/hero/hero_ice_sm.png     171w,
+        ./images/img/hero/hero_ice_sm@2x.png  342w,
+        ./images/img/hero/hero_ice_sm@3x.png  513w,
+        ./images/img/hero/hero_ice_tab.png    143w,
+        ./images/img/hero/hero_ice_tab@2x.png 286w,
+        ./images/img/hero/hero_ice_tab@3x.png 429w,
+        ./images/img/hero/hero_ice_lap.png    236w,
+        ./images/img/hero/hero_ice_lap@2x.png 472w,
+        ./images/img/hero/hero_ice_lap@3x.png 708w
+      "
+      sizes="(min-width: 1200px) 236px, (min-width: 768px) 143px, (max-width: 767px) 171px, 100vw"
+      src="./images/img/hero/hero_ice_sm.png"
+      alt="ice-cream"
+    />
+  </div>
+  <div class="hero__circle"></div>
 </section>
