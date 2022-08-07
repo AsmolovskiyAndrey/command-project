@@ -1,3 +1,29 @@
-.mobile-menu_icon {
-    fill: var(--main-clr);
+.header {
+    &__container {
+        display: flex;
+    }
+}
+
+.main-nav {
+    display: none;
+}
+
+.header__btn {
+    &--main {
+        display: none;
+    }
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+
+    background-color: var(--mobile-bg);
+    filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 }
