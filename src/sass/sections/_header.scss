@@ -1,4 +1,11 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+
+    background-color: transparent;
     &__container {
         display: flex;
     }
@@ -11,6 +18,8 @@
 .header__btn {
     &--main {
         display: none;
+
+        width: 160px;
     }
 }
 
@@ -18,7 +27,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 5;
+    z-index: 10;
 
     width: 250px;
     height: 100vh;
@@ -26,4 +35,13 @@
 
     background-color: var(--mobile-bg);
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+
+    // &__btn {
+    //     background-color: transparent;
+    // }
+}
+
+.icon {
+    width: 10px;
+    height: 10px;
 }
