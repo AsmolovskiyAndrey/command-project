@@ -1,16 +1,19 @@
 .hero{
-    background-color: var(--pink);
     position: relative;
+    background-color: var(--pink);
     overflow: hidden;
+    min-height: 502px;
 }
 .hero-container{
     padding-top: 194px;
     padding-bottom: 158px;
+    position: relative;
+}
+.hero__text{
+    position: relative;
     z-index: 3;
 }
 .hero__title{
-    // position: absolute;
-    z-index: 3;
     margin-bottom: 20px;
     font-family: 'Titan One';
     font-style: normal;
@@ -22,13 +25,9 @@
     font-weight: 400;
     font-size: 48px;
     line-height: 96.5%;
-    /* or 46px */
-
-    color: #D41443;
+    color: var(--main-clr);
 }
 .hero__links{
-    z-index: 3;
-    // position: absolute;
     display: flex;
 }
 .hero__li{
@@ -53,13 +52,13 @@
     bottom: 0;
     right: 10vw;
 
-    z-index: 0;
+    z-index: 1;
     width: 171px;
     height: auto;
 }
 .hero__circle{
     position: absolute;
-    bottom: 75px;
+    top: 75px;
     right: -64px;
 
     z-index: 0;
