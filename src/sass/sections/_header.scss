@@ -6,6 +6,7 @@
     z-index: 5;
 
     background-color: transparent;
+
     &__container {
         display: flex;
     }
@@ -33,12 +34,30 @@
     height: 100vh;
     padding: 20px;
 
+    transform: translateX(100%);
+
     background-color: var(--mobile-bg);
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 
     // &__btn {
     //     background-color: transparent;
     // }
+}
+
+.mobile-nav {
+    &__item {
+        border-top: 1px solid var(--mobile-row);
+        &:last-child {border-bottom: 1px solid var(--mobile-row);}
+    }
+    &__link {
+        display: block;
+        padding: 12px 0;
+        @include font(14px, 18px, 700, 0);
+        color: #fff;
+        &:hover {
+            color: var(--main-clr);
+        }
+    }
 }
 
 .icon {
