@@ -1,12 +1,16 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-family: inherit;
   padding: 16px 20px;
-  // height: 44px;
+  height: 44px;
 
   @include font(16px, 21px, 700, 0);
   text-align: center;
 
-  border-radius: 50%;
+  border-radius: 22px;
   border: none;
 
   transform: scale(1);
@@ -41,6 +45,9 @@
   display: flex;
   vertical-align: center;
   justify-content: center;
+
+  height: 40px;
+  width: 40px;
 
   border-radius: 50%;
   border: none;
