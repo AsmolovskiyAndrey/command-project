@@ -98,7 +98,7 @@
     @media screen and (min-width: $tablet) {
         width: 334px;
         height: 334px;
-        right: 185px;
+        right: 24vw;
         top: 43px;
     }
 }
@@ -111,8 +111,8 @@
     }
 }
 .hero-box__milk{
-        width: 152px;
-        height: auto;
+    width: 152px;
+    height: auto;
 }
 .hero-box__description{
     z-index: 2;
@@ -135,4 +135,52 @@
 }
 .hero-box__icon{
     fill: var(--main-clr);
+}
+.hero-info{
+    display: none;
+        
+    @media screen and (min-width: $tablet) {
+    display: flex;
+    position: absolute;
+    top: 94px;
+    right: 32px;
+    }
+}
+.hero-info__text{
+    @include font(8px, 10px, 400);
+    color: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+.hero-info__number{
+    position: relative;
+    z-index: 1;
+    font-family: 'Titan One';
+    font-style: normal;
+    @include font(28px, 32px, 400);
+    text-transform: uppercase;
+    color: var(--main-clr);
+}
+.hero-info__number::before {
+    content: '';
+    display: flex;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    position: absolute;
+    right: -8px;
+    z-index: -1;
+}
+.hero-info__girl{
+    position: absolute;
+    z-index: 3;
+    width: 190px;
+    height: 150px;
+    bottom: 0;
+    right: 32px;
 }
