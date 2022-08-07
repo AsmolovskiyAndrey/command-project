@@ -1,12 +1,96 @@
-<section class="">
-  <div class="header">
-    <svg class="mobile-menu">
-      <use
-        class="mobile-menu_icon"
-        width="60"
-        height="30"
-        href="./images/icons.svg#icon-menu"
-      ></use>
-    </svg>
+<header class="header">
+  <div class="container-top header__container">
+    <img
+      class="logo"
+      srcset="
+        ./images/img/hero/logo.png    1x,
+        ./images/img/hero/logo@2x.png 2x,
+        ./images/img/hero/logo@3x.png 3x
+      "
+      src="./images/img/hero/logo.png"
+      alt="Icecream logo"
+    />
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#hero">Home</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#products">About us</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#about">How it’s made?</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#gallery">Our products</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="button-circle mobile-menu__btn">
+      <svg class="mobile-menu__icon">
+        <use
+          class="mobile-menu__burger"
+          width="60"
+          height="30"
+          href="./images/icons.svg#icon-menu"
+        ></use>
+      </svg>
+    </button>
+    <button class="button header__btn">
+      <span>Buy now</span
+      ><svg class="icon">
+        <use
+          width="60"
+          height="30"
+          href="./images/icons.svg#icon-arrow_small"
+        ></use>
+      </svg>
+    </button>
+
+    <!-- --------------------------- mobile menu --------------------------- -->
+    <div class="mobile-menu">
+      <button class="button-circle mobile-menu__btn">
+        <svg class="mobile-menu__icon">
+          <use
+            class="mobile-menu__cross"
+            width="14"
+            height="14"
+            href="./images/icons.svg#icon-cross"
+          ></use>
+        </svg>
+      </button>
+      <button class="button header__btn">
+        <span>Buy now</span>
+        <svg class="icon">
+          <use
+            width="60"
+            height="30"
+            href="./images/icons.svg#icon-arrow_small"
+          ></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#hero">Home</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#products">About us</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#about">How it’s made?</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#gallery">Our products</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
-</section>
+</header>
