@@ -3,6 +3,8 @@
     background-color: var(--pink);
     overflow: hidden;
     min-height: 502px;
+    display: flex;
+    justify-content: flex-start;
 }
 .hero-container{
     padding-top: 194px;
