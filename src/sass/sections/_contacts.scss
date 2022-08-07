@@ -285,6 +285,7 @@
 .button--accent{
     color: #ffffff;
                 background-color: #d41443;
+                border-radius: 22px;
     
                 &:hover,
                 &:focus {
@@ -295,6 +296,7 @@
 .button--main{
     color: #d41443;
                 background-color: #ffffff;
+                border-radius: 22px;
     
                 &:hover,
                 &:focus {
@@ -302,12 +304,31 @@
                 }
 }
 
-.button__icon {
-    width: 4px;
-    height: 8px;
+    .button__icon {
+        width: 20px;
+        height: 18px;
+        background-color: inherit;
+}
 
-    background-color: white;
-    color: inherit;
 
-    margin-left: 12px;
+
+.button--large {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3125;
+    padding: 12px 35px;
+    margin-right: 12px;
+}
+.icon {
+    fill: #D41443;
+    margin-left: 13px;
+}
+
+.iconn {
+    fill: #FFFFFF;
+    margin-left: 13px;
+}
+
+.button__icon--append {
+    // position: absolute;
 }
