@@ -1,1 +1,70 @@
-// Для HERO
+.hero{
+    background-color: var(--pink);
+    position: relative;
+    overflow: hidden;
+}
+.hero-container{
+    padding-top: 194px;
+    padding-bottom: 158px;
+    z-index: 3;
+}
+.hero__title{
+    // position: absolute;
+    z-index: 3;
+    margin-bottom: 20px;
+    font-family: 'Titan One';
+    font-style: normal;
+    text-transform: uppercase;
+    @include font(26px, 30px, 400, 0.04em);
+    color: #FFF;
+}
+.hero__title--different-colour{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 96.5%;
+    /* or 46px */
+
+    color: #D41443;
+}
+.hero__links{
+    z-index: 3;
+    // position: absolute;
+    display: flex;
+}
+.hero__li{
+    @include font(8px, 10px, 400);
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+    background: var(--main-clr);
+    border-radius: 20px;
+    padding: 8px 14px;
+    margin-right: 8px;
+}
+.hero__li--second-color{
+    background-color: #fff;
+    color: var(--main-clr);
+}
+.hero__ice{
+    position: absolute;
+    bottom: 0;
+    right: 10vw;
+
+    z-index: 0;
+    width: 171px;
+    height: auto;
+}
+.hero__circle{
+    position: absolute;
+    bottom: 75px;
+    right: -64px;
+
+    z-index: 0;
+    width: 345px;
+    height: 345px;
+    background-color: var(--secondary-clr);
+    border-radius: 50%;
+}
