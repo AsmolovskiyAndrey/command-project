@@ -8,11 +8,11 @@
     background: rgb(255, 245, 246);
     background: linear-gradient(180deg, rgba(255, 245, 246, 1) 30%, rgba(255, 255, 255, 1) 30%);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         padding-bottom: 60px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $comp) {
         padding-bottom: 120px;
     }
 }
