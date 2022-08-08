@@ -6,6 +6,7 @@
     z-index: 5;
 
     padding-top: 8px;
+    padding-bottom: 8px;
 
     @media screen and (min-width: $tablet) {
         padding-top: 32px;
@@ -20,6 +21,19 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    transition: background-color var(--trasition-slow),
+    backdrop-filter var(--trasition-slow),
+    box-shadow var(--trasition-slow),
+    transform var(--trasition-slow);
+
+    &.js-no-transparency {
+        @media screen and (min-width: $tablet) {transform: translateY(-25%);}
+
+        background-color: rgba(255, 165, 186, 0.4);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 10px rgba(212, 20, 67, 0.4);
     }
 }
 
