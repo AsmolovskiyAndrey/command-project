@@ -26,11 +26,10 @@
   }
   &__list {
     list-style: none;
+    
     @media screen and (min-width: 768px) {
       display: flex;
       position: relative;
-      margin-left: 24px;
-      margin-right: 24px;
     }
     @media screen and (min-width: 1200px) {
       margin-left: 0;
@@ -59,13 +58,14 @@
   &__item {
     padding-top: 148px;
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
     @media screen and (min-width: 768px) {
       flex-wrap: nowrap;
       margin-left: 8px;
       margin-right: 8px;
     }
+    // @media screen and (max-width: 1199px) {
+    //   max-width: 224px;
+    // }
     @media screen and (min-width: 1200px) {
       padding-top: 261px;
       margin-left: 16px;
