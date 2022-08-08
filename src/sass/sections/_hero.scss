@@ -125,6 +125,12 @@
         right: 24vw;
         top: 43px;
     }
+    @media screen and (min-width: $comp){
+        width: 534px;
+        height: 534px;
+        right: 13vw;
+        top: 54px;
+    }
 }
 .hero-box{
     display: none;
@@ -133,20 +139,39 @@
         display: flex;
         margin-top: 20px;
     }
+    @media screen and (min-width: $comp) {
+        margin-top: 20px;
+    }
 }
 .hero-box__milk{
-    width: 152px;
-    height: auto;
+        width: 152px;
+        height: auto;
+
+    @media screen and (min-width: $comp){
+        width: 213px;
+        height: auto;
+    }
 }
 .hero-box__description{
     z-index: 2;
     width: 114px;
+
+    @media screen and (min-width: $comp){
+        width: 200px;
+    }
 }
 .hero-box__text{
     @include font(8px, 12px, 400);
     color: #FFF;
     margin-top: 41px;
     margin-bottom: 7px;
+
+    @media screen and (min-width: $comp){
+        font-size: 14px;
+        line-height: 140%;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
 }
 .hero-box__icon-box{
     background-color: #FFF;
@@ -156,9 +181,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: $comp){
+        width: 26px;
+        height: 26px;
+    }
 }
 .hero-box__icon{
     fill: var(--main-clr);
+    width: 7px;
+    height: 7px;
+
+    @media screen and (min-width: $comp){
+        width: 9px;
+        height: 9px;
+    }
 }
 .hero-info{
     display: none;
@@ -169,6 +206,10 @@
     top: 94px;
     right: 32px;
     }
+    @media screen and (min-width: $comp){
+        top: 152px;
+        right: 16px;
+    }
 }
 .hero-info__text{
     @include font(8px, 10px, 400);
@@ -177,8 +218,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-bottom: 16px;
+    margin-bottom: 17px;
     margin-right: 8px;
+
+    @media screen and (min-width: $comp){
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+        margin-right: 10px;
+    }
 }
 .hero-info__number{
     position: relative;
@@ -188,6 +236,11 @@
     @include font(28px, 32px, 400);
     text-transform: uppercase;
     color: var(--main-clr);
+
+    @media screen and (min-width: $comp){
+        font-size: 46px;
+        line-height: 53px;
+    }
 }
 .hero-info__number::before {
     content: '';
