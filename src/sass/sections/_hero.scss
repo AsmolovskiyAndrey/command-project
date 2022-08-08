@@ -20,6 +20,9 @@
     @media screen and (min-width: $tablet){
         padding-top: 102px;
     }
+    @media screen and (min-width: $comp) {
+        padding-top: 147px;
+    }
 }
 .hero__text{
     position: relative;
@@ -40,6 +43,7 @@
     @media screen and (min-width: $comp){
         font-size: 38px;
         line-height: 44px;
+        margin-bottom: 24px;
     }
 }
 .hero__title--different-colour{
@@ -52,6 +56,9 @@
         font-size: 34px;
         line-height: 90.5%;
     }
+    @media screen and (min-width: $comp){
+        font-size: 58px;
+    }
 }
 .hero__links{
     display: flex;
@@ -63,11 +70,17 @@
     align-items: center;
     text-align: center;
 
-
     background: var(--main-clr);
     border-radius: 20px;
     padding: 8px 14px;
     margin-right: 8px;
+
+    @media screen and (min-width: $comp){
+        font-size: 14px;
+        line-height: 18px;
+        padding: 11px 23px;
+        margin-right: 12px;
+    }
 }
 .hero__li--second-color{
     background-color: #fff;
@@ -87,6 +100,12 @@
         left: 322px;
         width: 143px;
         height: auto;
+    }
+    @media screen and (min-width: $comp){
+        top: 108px;
+        left: 636px;
+        width: 236px;
+        height: auto;   
     }
 }
 .hero__circle{
