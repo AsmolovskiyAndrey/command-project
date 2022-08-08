@@ -110,6 +110,15 @@
     width: 171px;
     height: auto;
 
+    transform: scale(1);
+    transition: transform var(--trasition-fast);
+    cursor: pointer;
+
+.hero__ice:hover,
+.hero__ice:focus {
+    transform: scale(1.2);
+}
+
     @media screen and (min-width: $tablet) {
         top: 80px;
         left: 322px;
@@ -298,10 +307,10 @@
     right: 32px;
 
     transform: scale(1);
-    transition: color var(--trasition-fast), background-color var(--trasition-fast), transform var(--trasition-fast);
+    transition: transform var(--trasition-fast);
     cursor: pointer;
     }
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $comp){
         width: 304px;
         height: 241px;
         right: 16px;
