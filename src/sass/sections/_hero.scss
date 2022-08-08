@@ -208,7 +208,7 @@
     }
     @media screen and (min-width: $comp){
         top: 152px;
-        right: 16px;
+        right: 21px;
     }
 }
 .hero-info__text{
@@ -253,6 +253,13 @@
     position: absolute;
     right: -8px;
     z-index: -1;
+
+    @media screen and (min-width: $comp){
+        width: 30px;
+        height: 30px;
+        right: -15px;
+        top: -3px;
+    }
 }
 .hero-info__girl{
     display: none;
@@ -265,5 +272,10 @@
     height: 150px;
     bottom: 0;
     right: 32px;
+    }
+    @media screen and (min-width: $tablet){
+        width: 304px;
+        height: 241px;
+        right: 16px;
     }
 }
