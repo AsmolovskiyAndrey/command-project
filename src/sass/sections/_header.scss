@@ -5,22 +5,73 @@
     width: 100%;
     z-index: 5;
 
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 32px;
+    }
+    @media screen and (min-width: $comp) {
+        padding-top: 40px;
+    }
+
     background-color: transparent;
 
     &__container {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    transition: background-color var(--trasition-slow),
+    backdrop-filter var(--trasition-slow),
+    box-shadow var(--trasition-slow),
+    transform var(--trasition-slow);
+
+    &.js-no-transparency {
+        @media screen and (min-width: $tablet) {transform: translateY(-25%);}
+
+        background-color: rgba(255, 165, 186, 0.4);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 10px rgba(212, 20, 67, 0.4);
     }
 }
 
 .main-nav {
     display: none;
+    @media screen and (min-width: $comp) {
+        display: block;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+    }
+    &__link {
+        display: block;
+        padding: 12px 0;
+        @include font(16px, 21px, 700, 0);
+        color: #fff;
+
+        &:hover {
+            color: var(--main-clr);
+        }
+    }
 }
 
 .header__btn {
     &--main {
         display: none;
-
         width: 160px;
+
+        @media screen and (min-width: $tablet) {
+        display: flex;
+        margin-left: 22px;
+        }
+    }
+    &--mobile {
+        width: 100%;
+        margin-top: 11px;
     }
 }
 
@@ -35,16 +86,28 @@
     padding: 20px;
 
     transform: translateX(100%);
+    transition: transform var(--trasition-fast);
 
     background-color: var(--mobile-bg);
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 
-    // &__btn {
-    //     background-color: transparent;
-    // }
+    @media screen and (min-width: $comp) {display: none;}
+    &__btn {
+        margin-left: auto;
+        @media screen and (min-width: $comp) {display: none;}
+        // background-color: transparent;
+    }
+    &__icon {display: inline-block;}
+
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
 }
 
 .mobile-nav {
+    margin-top: 20px;
+
     &__item {
         border-top: 1px solid var(--mobile-row);
         &:last-child {border-bottom: 1px solid var(--mobile-row);}

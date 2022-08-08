@@ -43,7 +43,7 @@
 
 .button-circle {
   display: flex;
-  vertical-align: center;
+  align-items: flex-start;
   justify-content: center;
 
   height: 40px;
@@ -51,6 +51,7 @@
 
   border-radius: 50%;
   border: none;
+  // overflow: hidden;
 
   color: var(--main-clr);
   background-color: #fff;

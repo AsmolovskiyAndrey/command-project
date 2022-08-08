@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" data-header>
   <div class="container-top header__container">
     <img
       class="logo"
@@ -29,17 +29,17 @@
         </li>
       </ul>
     </nav>
-    <button class="button-circle mobile-menu__btn">
+    <button class="button-circle mobile-menu__btn js-open-menu">
       <svg class="mobile-menu__icon">
         <use
           class="mobile-menu__burger"
-          width="60"
-          height="30"
+          width="20"
+          height="12"
           href="./images/icons.svg#icon-menu"
         ></use>
       </svg>
     </button>
-    <button class="button header__btn header__btn--main">
+    <button class="button button__main header__btn header__btn--main">
       <span>Buy now</span
       ><svg class="icon">
         <use
@@ -51,8 +51,8 @@
     </button>
 
     <!-- --------------------------- mobile menu --------------------------- -->
-    <div class="mobile-menu">
-      <button class="button-circle mobile-menu__btn">
+    <div class="mobile-menu js-menu-container">
+      <button class="button-circle mobile-menu__btn js-close-menu">
         <svg class="mobile-menu__icon">
           <use
             class="mobile-menu__cross"
@@ -62,7 +62,7 @@
           ></use>
         </svg>
       </button>
-      <button class="button header__btn header__btn--mobile">
+      <button class="button button__main header__btn header__btn--mobile">
         <span>Buy now</span>
         <svg class="icon">
           <use
@@ -94,3 +94,5 @@
     </div>
   </div>
 </header>
+<script src="./js/header-scroll.js"></script>
+<script src="./js/mobile-menu.js"></script>
