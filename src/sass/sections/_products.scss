@@ -83,6 +83,9 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 32px;
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+    }
   }
   &__wrapper {
     width: 100%;
@@ -112,7 +115,7 @@
     width: 280px;
     height: 280px;
     max-width: 100%;
-    background-image: url(../images/img/products/products_ice-cream1_sm@2x.png);
+    background-image: url(../images/img/products/products_ice-cream1_sm.png);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,67 +124,121 @@
     top: 0;
     left: 50%;
     transform: translate(-50%);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/img/products/products_ice-cream1_sm@2x.png);
+      }
     @media screen and (min-width: 768px) {
       width: 224px;
       height: 224px;
-      background-image: url(../images/img/products/products_ice-cream1_tab@2x.png);
-    }
-        @media screen and (min-width: 1200px) {
-          width: 368px;
-          height: 394px;
-          background-image: url(../images/img/products/products_ice-cream1_lap@2x.png);
+      background-image: url(../images/img/products/products_ice-cream1_tab.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../images/img/products/products_ice-cream1_tab@2x.png);
         }
-  }
-  &__second::before {
-    content: '';
-        width: 280px;
-        height: 280px;
-        max-width: 100%;
-        background-image: url(../images/img/products/products_ice-cream02_sm@2x.png);
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%);
-          @media screen and (min-width: 768px) {
-              width: 224px;
-              height: 224px;
-              background-image: url(../images/img/products/products_ice-cream2_tab@2x.png);
-  }
-  @media screen and (min-width: 1200px) {
-    width: 368px;
-    height: 394px;
-    background-image: url(../images/img/products/products_ice-cream2_lap@2x.png);
-  }
-}
-  &__third::before {
-    content: '';
-        width: 280px;
-        height: 280px;
-        max-width: 100%;
-        background-image: url(../images/img/products/products_ice-cream3_sm@2x.png);
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%);
-          @media screen and (min-width: 768px) {
-              width: 224px;
-              height: 224px;
-              background-image: url(../images/img/products/products_ice-cream3_tab@2x.png);
-  }
+    }
     @media screen and (min-width: 1200px) {
       width: 368px;
       height: 394px;
-      background-image: url(../images/img/products/products_ice-cream3_lap@2x.png);
+      background-image: url(../images/img/products/products_ice-cream1_lap.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../images/img/products/products_ice-cream1_lap@2x.png);
+        }
     }
-}
+  }
+  &__second::before {
+    content: '';
+    width: 280px;
+    height: 280px;
+    max-width: 100%;
+    background-image: url(../images/img/products/products_ice-cream2_sm.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/img/products/products_ice-cream02_sm@2x.png);
+      }
+    @media screen and (min-width: 768px) {
+      width: 224px;
+      height: 224px;
+      background-image: url(../images/img/products/products_ice-cream2_tab.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../images/img/products/products_ice-cream2_tab@2x.png);
+        }
+    }
+    @media screen and (min-width: 1200px) {
+      width: 368px;
+      height: 394px;
+      background-image: url(../images/img/products/products_ice-cream2_lap.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../images/img/products/products_ice-cream2_lap@2x.png);
+        }
+    }
+  }
+  &__third::before {
+    content: '';
+    width: 280px;
+    height: 280px;
+    max-width: 100%;
+    background-image: url(../images/img/products/products_ice-cream3_sm.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/img/products/products_ice-cream3_tab@2x.png);
+      }
+    @media screen and (min-width: 768px) {
+      width: 224px;
+      height: 224px;
+      background-image: url(../images/img/products/products_ice-cream3_tab.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../images/img/products/products_ice-cream3_tab@2x.png);
+        }
+    }
+    @media screen and (min-width: 1200px) {
+      width: 368px;
+      height: 394px;
+      background-image: url(../images/img/products/products_ice-cream3_lap.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../images/img/products/products_ice-cream3_tab@2x.png);
+        }
+    }
+  }
   &__dots-box {
     margin: 0 auto 32px;
   }
@@ -226,8 +283,6 @@
     margin-bottom: 32px;
     @media screen and (min-width: 1200px) {
       margin-bottom: 60px;
-    }
-    @media screen and (min-width: 1200px) {
       font-size: 16px;
     }
   }
@@ -245,9 +300,14 @@
     display: flex;
     position: relative;
   }
+   &__button:hover {
+    background-color: var(--bg-clr);
+   }
   &__icon {
+    z-index: 2;
     width: 15px;
     height: 15px;
     fill: var(--main-clr);
   }
 }
+
