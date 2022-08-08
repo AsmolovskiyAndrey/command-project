@@ -25,6 +25,7 @@
 
 
 .local {
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +34,10 @@
 
     padding-left: 16px;
     padding-right: 16px;
+
+    // @media screen and (max-width: 767px) {
+    //     flex-wrap: nowrap;
+    // }
 
     @media screen and (min-width: 768px) {
         flex-wrap: nowrap;
@@ -178,15 +183,18 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 32px;
+    
 
     @media screen and (min-width: 768px) {
         flex-wrap: nowrap;
         gap: 15px;
         margin-top: 40px;
+        
     }
 
     @media screen and (min-width: 1200px) {
         margin-top: 60px;
+        
     }
     // background: #D41342;
     // border-radius: 22px;
@@ -285,6 +293,7 @@
 .button--accent{
     color: #ffffff;
                 background-color: #d41443;
+                border-radius: 22px;
     
                 &:hover,
                 &:focus {
@@ -295,6 +304,7 @@
 .button--main{
     color: #d41443;
                 background-color: #ffffff;
+                border-radius: 22px;
     
                 &:hover,
                 &:focus {
@@ -302,12 +312,36 @@
                 }
 }
 
-.button__icon {
-    width: 4px;
-    height: 8px;
+    .button__icon {
+        width: 20px;
+        height: 18px;
+        background-color: inherit;
+}
 
-    background-color: white;
-    color: inherit;
 
-    margin-left: 12px;
+
+.button--large {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3125;
+    padding: 12px 35px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    
+}
+.icon {
+    fill: #D41443;
+    margin-left: 13px;
+    
+}
+
+.iconn {
+    fill: #FFFFFF;
+    margin-left: 13px;
+    
+}
+
+.button__icon--append {
+    // position: absolute;
 }
