@@ -85,6 +85,7 @@
   }
 
   .milk-thumb { 
+    width: 100vw;
     background:  url("../images/img/about/milk_lap.png") no-repeat center;
     background-size: contain;
   
@@ -93,7 +94,8 @@
     }
   
     @media screen and (min-width: $comp) {
-      background: url("../images/img/about/milk_lap.png") no-repeat bottom;
+      background: url("../images/img/about/milk_lap.png") no-repeat;
+      background-position: center bottom;
         background-size: contain;
   
       @media (min-device-pixel-ratio: 2),
@@ -101,8 +103,9 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
   
-        background:
-          url("../images/img/about/milk_lap@2x.png");
+        background: url("../images/img/about/milk_lap@2x.png") no-repeat;
+          background-position: center bottom;
+          background-size: contain;
       }
   
       @media (min-device-pixel-ratio: 3),
@@ -110,12 +113,13 @@
       (min-resolution: 458dpi),
       (min-resolution: 3dppx) {
   
-        background-image:
-          url("../images/img/about/milk_lap@3x.png");
+        background: url("../images/img/about/milk_lap@3x.png") no-repeat;
+          background-position: center bottom;
+          background-size: contain;
       }
     }
-
   }
+
   .about {
     padding-top: 60px;
   }
