@@ -1,27 +1,27 @@
 .footer {
-    position: relative;
     background-color: var(--bg-clr);
-    padding-top: 56px;
+    padding-top: 40px;
 
-    // @media screen and (min-width: $tablet) {
-    //     padding-top: 79px;
-    // }
-    // @media screen and (min-width: $comp) {
-    //     padding-top: 82px;
-    // }
+    @media screen and (min-width: $tablet) {
+        padding-top: 121px;
+    }
 }
 
-// .footer__box {
-//   @include minMedia($tab) {
-//     display: flex;
-//     justify-content: space-between;
-//     margin-bottom: 91px;
-//   }
+.footer__box {
+    @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    }
 
-//   @include minMedia($desk) {
-//     margin-bottom: 97px;
-//   }
-// }
+    // @include minMedia($desk) {
+    // margin-bottom: 97px;
+    // }
+}
+.footer__nav{
+    @media screen and (min-width: $tablet){
+        margin-top: 60px;
+    }
+}
 
 .footer__name {
     display: block;
@@ -35,12 +35,11 @@
     margin-bottom: 40px;
     max-width: 232px;
 
-    // @include minMedia($tab) {
-    // width: 340px;
-    // font-size: 26px;
-    // line-height: calc(30 / 26);
-    // margin: 0;
-    // }
+    @media screen and (min-width: $tablet){
+        font-size: 26px;
+        line-height: 30px;
+        max-width: 340px;
+    }
 
     // @include minMedia($desk) {
     // width: 472px;
@@ -57,12 +56,10 @@
     // width: 200px;
     margin-top: 16px;
 
-    // @include minMedia($tab) {
-    // font-size: 48px;
-    // line-height: calc(55 / 48);
-    // width: 340px;
-    // padding-top: 16px;
-    // }
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+        line-height: 55px;
+    }
 
     // @include minMedia($desk) {
     // font-size: 58px;
@@ -130,9 +127,11 @@
 .footer__phone-text {
     color: #000;
     @include font(12px, 22px, 700);
-    // @include minMedia($tab) {
-    // font-size: 14px;
-    // }
+
+    @media screen and (min-width: $tablet){
+        font-size: 14px;
+        line-height: 26px;
+    }
 
     // @include minMedia($tab) {
     // font-size: 16px;
@@ -181,10 +180,13 @@
     @include font(14px, 21px, 700);
     color: var(--txt-clr);
 
-    // @include maxMedia($preTab) {
-    // display: block;
-    // width: 150px;
-    // }
+    @media screen and (min-width: $tablet){
+        width: 300px;
+        padding-top: 7px;
+        padding-bottom: 4px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+    }
 
     // @include minMedia($tab) {
     // padding-top: 29px;
