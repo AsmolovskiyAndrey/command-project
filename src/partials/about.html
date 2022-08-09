@@ -1,1 +1,111 @@
-<section> about (How It's Made)</section>
+<section class="about">
+  <picture class="picture_about">
+    <source
+      media="(min-width: 1200px)"
+      srcset="
+        ./images/img/about/milk_lap.png    1x,
+        ./images/img/about/milk_lap@2x.png 2x,
+        ./images/img/about/milk_lap@3x.png 3x
+      "
+      type="image/png"
+    />
+    <img src="./images/img/about/milk_lap.png" alt="фото" width="" height="" />
+  </picture>
+
+  <div class="container-top">
+    <label class="label" for="title-about">tradition and love</label>
+    <h2 class="title-about">how it’s made?</h2>
+
+    <div class="description-about">
+      <div class="description">
+        <ul>
+          <li>
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/img/about/about_cow_lap.png    1x,
+                  ./images/img/about/about_cow_lap@2x.png 2x,
+                  ./images/img/about/about_cow_lap@3x.png 3x
+                "
+                type="image/png"
+              />
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/img/about/about_cow_tab.png    1x,
+                  ./images/img/about/about_cow_tab@2x.png 2x,
+                  ./images/img/about/about_cow_tab@3x.png 3x
+                "
+                type="image/png"
+              />
+
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/img/about/about_cow_sm.png    1x,
+                  ./images/img/about/about_cow_sm@2x.png 2x,
+                  ./images/img/about/about_cow_sm@3x.png 3x
+                "
+                type="image/png"
+              />
+
+              <img
+                src="./images/img/about/about_cow_sm.png"
+                alt="фото"
+                min-width="280"
+                min-height="279"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subtitle">
+        <ul>
+          <li class="subtitle__list">
+            <h3 class="subtitle__about">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+              justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+              erat at justo fringilla.
+            </h3>
+            <picture class="picture_description">
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/img/about/milk_lap.png    1x,
+                  ./images/img/about/milk_lap@2x.png 2x,
+                  ./images/img/about/milk_lap@3x.png 3x
+                "
+                type="image/png"
+              />
+              <img
+                src="./images/img/about/milk_lap.png"
+                alt="фото"
+                width=""
+                height=""
+              />
+            </picture>
+            <p class="subtitle__description">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio
+              elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+              euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+              Cras massa nibh, tincidunt.
+            </p>
+            <p class="subtitle__description">
+              Aliquam erat volutpat. Aenean accumsan.
+            </p>
+
+            <button class="button button__main about__btn" type="button">
+              Read more
+              <svg class="button-icon" width="6" height="12">
+                <use href="./images/icons.svg#icon-arrow_small"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
