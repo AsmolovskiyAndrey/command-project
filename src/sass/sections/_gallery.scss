@@ -16,6 +16,16 @@
         padding-bottom: 120px;
     }
 }
+.container-center{
+    @media screen and (min-width: $tablet){
+        width: $tablet;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: $comp) {
+        width: 1012px;
+        margin: 0 auto;
+    }
+}
 
 .gallery {
     &__wrapper {
