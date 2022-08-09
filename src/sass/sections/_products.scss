@@ -26,11 +26,10 @@
   }
   &__list {
     list-style: none;
+    
     @media screen and (min-width: 768px) {
       display: flex;
       position: relative;
-      margin-left: 24px;
-      margin-right: 24px;
     }
     @media screen and (min-width: 1200px) {
       margin-left: 0;
@@ -59,13 +58,15 @@
   &__item {
     padding-top: 148px;
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
+    display: flex;
     @media screen and (min-width: 768px) {
       flex-wrap: nowrap;
       margin-left: 8px;
       margin-right: 8px;
     }
+    // @media screen and (max-width: 1199px) {
+    //   max-width: 224px;
+    // }
     @media screen and (min-width: 1200px) {
       padding-top: 261px;
       margin-left: 16px;
@@ -300,14 +301,56 @@
     display: flex;
     position: relative;
   }
-   &__button:hover {
-    background-color: var(--bg-clr);
-   }
+  &__button:hover {
+    background-color: var(--main-clr);
+    transition-duration: 0.5s;
+  }
   &__icon {
     z-index: 2;
     width: 15px;
     height: 15px;
     fill: var(--main-clr);
   }
+  &__button:hover &__icon {
+    fill: #ffffff;
+    transition-duration: 0.5ms;
+  }
+  &__window {
+    visibility: hidden;
+    justify-content: center;
+    border-radius: 24px;
+    background-color: var(--bg-clr);
+    // text-align: center;
+    position: absolute;
+    left: 0;
+    top: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: auto;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      height: 260px;
+      top: 250px;
+    }
+    @media screen and (min-width:1200px) {
+      top: 430px;
+      height: 270px;
+    }
+  }
+  &__button:hover + &__window {
+    visibility: visible;
+  }
+  &__win-txt {
+    font-family: "Titan One";
+    color: var(--main-clr);
+    font-weight: 400;
+    font-size: 28px;
+    padding: 20px;
+    @media screen  and (min-width: 760px) {
+      font-size: 24px;
+    }
+  }
 }
+
+
 
