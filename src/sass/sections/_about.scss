@@ -1,1 +1,321 @@
-// style
+  $f-fam: 'Titan One';
+  $f-st: normal;
+  $f-w: 400;
+  $f-s: 18px;
+  $l-h: 1.17;
+  $ls: 0.04em;
+
+  @mixin fontTitle ($f-s, $f-w , $l-h, $ls) {
+    font-family: $f-fam;
+    font-style: $f-st;
+    font-weight: $f-w;
+    font-size: $f-s;
+    line-height: $l-h;
+    letter-spacing: $ls;
+  }
+
+  $f-am: 'DM Sans';
+  $fst: normal;
+  $fw: 500;
+  $fs: 12px;
+  $lh: 1.62;
+  $l-s: 0.04em;
+
+  @mixin fontText ($fs, $fw , $lh, $l-s) {
+    font-family: $f-am;
+    font-style: $fst;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $l-s;
+  }
+
+  .button-icon {
+    fill: var(--main-clr);
+    margin-left: 14px;
+  }
+
+  .about__btn {
+    width: 176px;
+  }
+
+  .picture_about {
+    @media screen and (min-width: $mobile ) {
+      max-width: 100vw;
+      display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+      max-width: $tablet;
+      display: none;
+    }
+
+    @media screen and (min-width: $comp) {
+      max-width: $comp;
+      display: block;
+      position: absolute;
+      transform: translateY(35%);
+    }
+  }
+
+  .picture_description {
+    @media screen and (min-width: $mobile ) {
+      // width: calc(100vw-40) ; 
+      position: absolute;
+
+      transform: translateY(-35%);
+      z-index: 0;
+    }
+
+    @media screen and (min-width: $tablet) {
+      max-width: $tablet;
+      display: none;
+    }
+
+
+    @media screen and (min-width: $comp) {
+      max-width: $comp;
+      display: none;
+    }
+  }
+
+  .about,
+  .advantages {
+    background-color: var(--bg-clr);
+  }
+
+  .milk-thumb { 
+    background:  url("../images/img/about/milk_lap.png") no-repeat center;
+    background-size: contain;
+  
+    @media screen and (min-width: $tablet) {
+      background: none;
+    }
+  
+    @media screen and (min-width: $comp) {
+      background: url("../images/img/about/milk_lap.png") no-repeat bottom;
+        background-size: contain;
+  
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+  
+        background:
+          url("../images/img/about/milk_lap@2x.png");
+      }
+  
+      @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 458dpi),
+      (min-resolution: 3dppx) {
+  
+        background-image:
+          url("../images/img/about/milk_lap@3x.png");
+      }
+    }
+
+  }
+  .about {
+    padding-top: 60px;
+  }
+
+  .advantages {
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {padding-top: 60px;}
+  }
+
+
+  .label {
+    display: block;
+    color: var(--secondary-clr);
+
+    @include fontTitle($f-s, $f-w , $l-h, $ls );
+
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+      max-width: $tablet;
+      @include fontTitle(26px, $f-w , 1.15, $ls);
+    }
+
+    @media screen and (min-width: $comp) {
+      max-width: $comp;
+      @include fontTitle(30px, $f-w , 1.13, $ls );
+    }
+
+  }
+
+  .title-about {
+    padding-top: 15px;
+    padding-bottom: 32px;
+
+    color: var(--main-clr);
+
+    @include fontTitle(34px, $f-w , 1.15, $ls);
+
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+      max-width: $tablet;
+      padding-bottom: 40px;
+
+      @include fontTitle(48px, $f-w , 1.15, $ls);
+    }
+
+    @media screen and (min-width: $comp) {
+      max-width: $comp;
+      padding-bottom: 60px;
+
+      @include fontTitle(58px, $f-w , 1.14, 0.06em);
+    }
+  }
+
+  .description-about {
+    position: relative;
+    z-index: 1;
+
+    @media screen and (min-width: $tablet) {
+      max-width: $tablet;
+      display: flex;
+    }
+
+    @media screen and (min-width: $comp) {
+      max-width: $comp;
+    }
+  }
+
+  .description {
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
+
+    @media screen and (min-width: $comp) {
+      max-width: $comp;
+      display: flex;
+    }
+  }
+
+  .subtitle {
+
+    @media screen and (min-width: $mobile ) {
+      max-width: 100vw;
+      margin-right: 60px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      max-width: $tablet;
+      padding-left: 32px;
+      width: 374px;
+      margin-right: 0;
+    }
+
+    @media screen and (min-width: $comp) {
+      max-width: $comp;
+      padding-left: 99px;
+      width: 670px;
+      padding-top: 90px;
+      padding-right: 105px;
+    }
+  }
+
+  // .subtitle__list {
+  //     margin-right: 80px;
+  // }
+
+  .subtitle__about {
+    position: relative;
+    z-index: 1;
+    color: #000;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include fontText ($fs, $fw , $lh, $l-s);
+
+    @media screen and (min-width: $tablet) {
+      max-width: $tablet;
+      padding-top: 0;
+
+      @include fontText (14px, $fw , 1.76, $l-s);
+    }
+
+    @media screen and (min-width: $comp) {
+      max-width: $comp;
+      padding-bottom: 32px;
+      @include fontText (16px, $fw , 1.76, $l-s);
+    }
+  }
+
+  .subtitle__description:not(:last-child) {
+    padding-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      max-width: $tablet;
+    }
+
+    @media screen and (min-width: $comp) {
+      max-width: $comp;
+      padding-bottom: 40px;
+      padding-top: 0;
+    }
+  }
+
+  .subtitle__description {
+    position: relative;
+
+    padding-bottom: 20px;
+
+    color: var(--txt-clr);
+
+    @include fontText ($fs, $fw , $lh, $l-s);
+
+    @media screen and (min-width: $mobile ) {
+      max-width: 100vw;
+    }
+
+    @media screen and (min-width: $tablet) {
+      max-width: $tablet;
+      //  padding-bottom: 40px;
+      background-image: none;
+
+      @include fontText (14px, $fw , 1.76, $l-s);
+    }
+
+    @media screen and (min-width: $comp) {
+      max-width: $comp;
+      @include fontText (14px, $fw , 1.76, $l-s);
+      padding-top: 32px;
+    }
+  }
+
+  //  background-image: 
+  //     url("../../images/img/about/milk_sm.png");
+
+  //     background-size: 100%;
+
+  //     margin-left: auto;
+  //     margin-right: auto;
+
+
+  // @media (min-device-pixel-ratio: 2),
+  //      (-webkit-min-device-pixel-ratio: 2),
+  //      (min-resolution: 192dpi),
+  //      (min-resolution: 2dppx) {
+
+  //       background-image:
+  //        url("../../images/img/about/milk_sm@2x.png");}  
+
+  // @media (min-device-pixel-ratio: 3),
+  //        (-webkit-min-device-pixel-ratio: 3),
+  //        (min-resolution: 458dpi),
+  //        (min-resolution: 3dppx) {
+
+  //         background-image:
+  //          url("../../images/img/about/milk_sm@3x.png");}  
+  //        }

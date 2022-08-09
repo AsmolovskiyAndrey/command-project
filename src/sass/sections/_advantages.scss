@@ -1,0 +1,80 @@
+  .advantages {
+    background-color: var(--bg-clr);
+  }
+  
+.advantages-tumb {
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    display: flex;
+    margin-right: 177px;
+  }
+
+  @media screen and (min-width: $comp) {
+    max-width: $comp;
+    display: flex;
+  }
+}
+
+.advantages-list__numbers {
+  margin-top: 16px;
+
+  color: var(--main-clr);
+
+  @include fontTitle(36px, $f-w , 1.14, $ls);
+
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    margin-top: 36px;
+
+    @include fontTitle(48px, $f-w , 1.14, $ls);
+  }
+
+  @media screen and (min-width: $comp) {
+    max-width: $comp;
+    margin-top: 40px;
+    @include fontTitle (58px, $f-w , 1.14, $ls);
+  }
+}
+
+.advantages-list__text {
+  padding-top: 20px;
+  margin-right: 70px;
+
+  color: #000;
+
+  @include fontText ($fs, 700, 1.70, $l-s);
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    padding-top: 13px;
+    margin-right: 0;
+
+    @include fontText (14px, 700, 1.74, $l-s);
+  }
+
+  @media screen and (min-width: $comp) {
+    max-width: $comp;
+    padding-top: 16px;
+    margin-right: 0;
+
+    @include fontText (16px, 700, 1.74, 0.02em);
+  }
+}
+
+.advantages-tumb-list:not(:last-child) {
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    margin-bottom: 0;
+    margin-right: 22px;
+  }
+
+  @media screen and (min-width: $comp) {
+    max-width: $comp;
+    margin-right: 115px;
+  }
+}
