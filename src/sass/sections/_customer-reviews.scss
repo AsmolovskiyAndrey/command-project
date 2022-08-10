@@ -1,6 +1,12 @@
+.slide {padding-top: 5px;}
+
+.customer-reviews {padding-bottom: 120px;}
+
 .customer-reviews__img {
   margin: auto;
   margin-bottom: 32px;
+
+  transition: transform 0.25s;
 
   @media screen and (min-width: $tablet) {
     max-width: $tablet;
@@ -14,7 +20,6 @@
 }
 
 .customer-reviews__img:hover {
-  transition: transform 0.25s;
   transform: scale(1.1);
 }
 
@@ -87,6 +92,7 @@
   height: 4px;
   margin: 16px auto;
   fill: var(--main-clr);
+  transition: var(--trasition-slow);
 }
 
 .customer-reviews__name {

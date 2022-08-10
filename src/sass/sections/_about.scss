@@ -238,7 +238,7 @@
     color: #000;
 
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
 
     @include fontText ($fs, $fw , $lh, $l-s);
 
@@ -251,7 +251,6 @@
 
     @media screen and (min-width: $comp) {
       max-width: $comp;
-      padding-bottom: 32px;
       @include fontText (16px, $fw , 1.76, $l-s);
     }
   }

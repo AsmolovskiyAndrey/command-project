@@ -1,60 +1,15 @@
 // style
 .contacts-section {
-    background-image: linear-gradient(to top, #fff5f6 80%, #fff 20%);
-
+    background-image: linear-gradient(to bottom, #fff 20%, #fff5f6 20%, #fff5f6);
+ 
     @media screen and(min-width: 768px) {
-        background-image: linear-gradient(to top, #fff5f6 50%, #fff 50%);
+        background-image: linear-gradient(to bottom, #fff 50%, #fff5f6 50%, #fff5f6);
     }
 
     @media screen and(min-width: 1200px) {
-        background-image: linear-gradient(to top, #fff5f6 80%, #fff 20%);
-        // width: 100%;
-        // min-height: 382px;
-        // background-size: contain;
-        // background-repeat: no-repeat;
-        // background-position: center 50%;
-
-        // @media (min-device-pixel-ratio: 2),
-        // (min-resolution: 192dpi),
-        // (min-resolution: 2dppx) {
-        //     background-image: linear-gradient(to top, #fff5f6 80%, #ffffff 20%);
-        // }
+        background-image: linear-gradient(to bottom, #fff 20%, #fff5f6 20%, #fff5f6);
     }
 }
-
-// .visually-hidden {
-//     position: absolute;
-//     white-space: nowrap;
-//     width: 1px;
-//     height: 1px;
-//     overflow: hidden;
-//     border: 0;
-//     padding: 0;
-//     clip: rect(0 0 0 0);
-//     clip-path: inset(50%);
-//     margin: -1px;
-// }
-
-// .container-bottom {
-//     padding: 0 20px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     min-width: 320px;
-
-//     @media screen and (min-width: 320px) {
-//       max-width: 100vw;
-//     }
-
-//     @media screen and (min-width: 768px) {
-//       max-width: var(--tablet);
-//       padding: 0 16px;
-//     }
-
-//     @media screen and (min-width: 1200px) {
-//       max-width: var(--comp);
-//     }
-// }
-
 
 .local {
     display: flex;
@@ -77,22 +32,15 @@
     padding: 40px 32px;
     width: calc(100% - 40px);
     max-width: 380px;
-    // flex: 1;
 
 
     @media screen and (min-width: $tablet) {
-        width: 224px;
-        // width: calc((100% - 64px) / 3);
+        width: 224px - 16px;
     }
 
     @media screen and (min-width: $comp) {
-        width: 368px;
-        // width: calc((100% - 90px) / 4);
+        width: 368px - 16px;
     }
-
-    // @media screen and (min-width: 1200px) {
-    //     padding: 40px;
-    // }
         
 }
 

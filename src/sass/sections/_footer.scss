@@ -73,13 +73,6 @@
     justify-content: flex-end;
     margin-bottom: 40px;
 }
-.footer__social-icon{
-    --color5 : var(--socials-clr);
-        &:hover,
-        &:focus {
-            --color5: var(--main-clr);
-        }
-}
 
 .footer__social-item {
     width: 32px;
@@ -87,14 +80,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+    padding-top: 4px;
     transform: scale(1);
-    transition: color var(--trasition-fast), background-color var(--trasition-fast), transform var(--trasition-fast);
+    background-color: var(--socials-clr);
+    transition: transform var(--trasition-fast), background-color var(--trasition-fast);
     cursor: pointer;
-    fill: var(--secondary-clr);
 
     &:hover,
     &:focus {
-    fill: var(--main-clr);
+    transform: scale(1.15);
+    background-color: var(--main-clr);
     }
 
     &:not(:last-child) {
