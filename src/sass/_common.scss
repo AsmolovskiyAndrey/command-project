@@ -4,6 +4,7 @@ body {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
+  overflow-x: hidden;
 
   &.no-scroll {
     overflow: hidden;
