@@ -1,6 +1,7 @@
 // style
 
 .products {
+  position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
   &__label {
@@ -11,14 +12,15 @@
     line-height: 1.16;
     text-align: center;
     text-transform: uppercase;
-    color: var(--secondary-clr);
+    // color: var(--secondary-clr);
+    color: var(--main-clr);
     margin-bottom: 15px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       font-size: 26px;
       line-height: 1.15;
       margin-bottom: 18px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $comp) {
       font-size: 30px;
       line-height: 1.13;
       margin-bottom: 16px;
@@ -27,11 +29,11 @@
   &__list {
     list-style: none;
     
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       position: relative;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $comp) {
       margin-left: 0;
       margin-right: 0;
     }
@@ -47,11 +49,11 @@
     text-transform: uppercase;
     color: var(--main-clr);
     margin-bottom: 8px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 20px;
       font-size: 48px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $comp) {
       font-size: 58px;
     }
   }
@@ -59,7 +61,7 @@
     padding-top: 148px;
     position: relative;
     display: flex;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       flex-wrap: nowrap;
       margin-left: 8px;
       margin-right: 8px;
@@ -67,7 +69,7 @@
     // @media screen and (max-width: 1199px) {
     //   max-width: 224px;
     // }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $comp) {
       padding-top: 261px;
       margin-left: 16px;
       margin-right: 16px;
@@ -84,7 +86,7 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 32px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $comp) {
       font-size: 30px;
     }
   }
@@ -93,11 +95,11 @@
     min-height: 489px;
     border-radius: 24px;
     padding: 160px 40px 40px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       min-height: 473px;
       padding: 118px 24px 60px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $comp) {
       min-height: 535px;
       padding: 165px 62px 60px;
     }
@@ -131,7 +133,7 @@
       (min-resolution: 2dppx) {
         background-image: url(../images/img/products/products_ice-cream1_sm@2x.png);
       }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       width: 224px;
       height: 224px;
       background-image: url(../images/img/products/products_ice-cream1_tab.png);
@@ -142,7 +144,7 @@
           background-image: url(../images/img/products/products_ice-cream1_tab@2x.png);
         }
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $comp) {
       width: 368px;
       height: 394px;
       background-image: url(../images/img/products/products_ice-cream1_lap.png);
@@ -185,7 +187,7 @@
           background-image: url(../images/img/products/products_ice-cream2_tab@2x.png);
         }
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $comp) {
       width: 368px;
       height: 394px;
       background-image: url(../images/img/products/products_ice-cream2_lap.png);
@@ -217,7 +219,7 @@
       (min-resolution: 2dppx) {
         background-image: url(../images/img/products/products_ice-cream3_tab@2x.png);
       }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       width: 224px;
       height: 224px;
       background-image: url(../images/img/products/products_ice-cream3_tab.png);
@@ -228,7 +230,7 @@
           background-image: url(../images/img/products/products_ice-cream3_tab@2x.png);
         }
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $comp) {
       width: 368px;
       height: 394px;
       background-image: url(../images/img/products/products_ice-cream3_lap.png);
@@ -282,7 +284,7 @@
     letter-spacing: 0.04em;
     color: #ffffff;
     margin-bottom: 32px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $comp) {
       margin-bottom: 60px;
       font-size: 16px;
     }
@@ -292,31 +294,29 @@
     height: 40px;
     cursor: pointer;
     background-color: #fff;
+    transition: background-color var(--trasition-fast);
     border-color: rgba(0, 0, 0, 0);
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    transition: background-color 0.25s;
     display: flex;
     position: relative;
-  }
-  &__button:hover {
-    background-color: var(--main-clr);
-    transition-duration: 0.5s;
+
+    &:hover { background-color: var(--main-clr);  }
   }
   &__icon {
     z-index: 2;
     width: 15px;
     height: 15px;
     fill: var(--main-clr);
+    transition: fill var(--trasition-fast);
   }
   &__button:hover &__icon {
     fill: #ffffff;
-    transition-duration: 0.5ms;
   }
   &__window {
-    visibility: hidden;
+    opacity: 0;
     justify-content: center;
     border-radius: 24px;
     background-color: var(--bg-clr);
@@ -326,19 +326,22 @@
     margin-left: 20px;
     margin-right: 20px;
     height: auto;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width: 768px) {
+    
+    transition: opacity var(--trasition-slow) 1s;
+
+    @media screen and (min-width: $tablet) {
       position: absolute;
       height: 260px;
       top: 250px;
     }
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width: $comp) {
       top: 430px;
       height: 270px;
     }
   }
   &__button:hover + &__window {
-    visibility: visible;
+    opacity: 1;
+    transition: opacity var(--trasition-fast);
   }
   &__win-txt {
     font-family: "Titan One";
@@ -346,8 +349,8 @@
     font-weight: 400;
     font-size: 28px;
     padding: 20px;
-    transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen  and (min-width: 760px) {
+    transition: var(--trasition-slow);
+    @media screen  and (min-width: $tablet) {
       font-size: 24px;
     }
   }

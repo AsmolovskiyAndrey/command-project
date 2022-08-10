@@ -53,6 +53,7 @@
         padding: 12px 0;
         @include font(16px, 21px, 700, 0);
         color: #fff;
+        transition: color var(--trasition-fast);
 
         &:hover {
             color: var(--main-clr);
@@ -123,6 +124,7 @@
         padding: 12px 0;
         @include font(14px, 18px, 700, 0);
         color: #fff;
+        transition: color var(--trasition-fast);
         &:hover {
             color: var(--main-clr);
         }
