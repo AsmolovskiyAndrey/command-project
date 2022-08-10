@@ -1,9 +1,9 @@
 // style
 .contacts-section {
-    background-image: linear-gradient(to top, #fff5f6 75%, #ffffff 25%);
+    background-image: linear-gradient(to top, #fff5f6 75%, #fff 25%);
 
     @media screen and(min-width: 768px) {
-        background-image: linear-gradient(to top, #fff5f6 80%, #ffffff 20%);
+        background-image: linear-gradient(to top, #fff5f6 80%, #fff 20%);
     }
 
     @media screen and(min-width: 1200px) {
@@ -237,24 +237,24 @@
 
 .button--accent{
     color: #ffffff;
-                background-color: #d41443;
-                border-radius: 22px;
-    
-                &:hover,
-                &:focus {
-                    background-color: #c7133e;
-                }
+    background-color: #d41443;
+    border-radius: 22px;
+
+    &:hover,
+    &:focus {
+        background-color: #c7133e;
+    }
 }
 
 .button--main{
     color: #d41443;
-                background-color: #ffffff;
-                border-radius: 22px;
-    
-                &:hover,
-                &:focus {
-                    background-color: #ecebeb;
-                }
+    background-color: #ffffff;
+    border-radius: 22px;
+
+    &:hover,
+    &:focus {
+        background-color: #ecebeb;
+    }
 }
 
 .button--large {
