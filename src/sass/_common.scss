@@ -7,11 +7,10 @@ body {
 
   &.no-scroll {
     overflow: hidden;
-    position: relative;
   }
 }
 
-.overflow-wrapper {overflow-x: hidden;}
+.overflow-wrapper {overflow-x: hidden; position: relative;}
 
 // reset
 
