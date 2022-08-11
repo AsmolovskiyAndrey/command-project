@@ -2,10 +2,11 @@
   position: absolute;
   top: -0.5rem;
   left: 0;
+  right: 0;
 
   z-index: -1;
   height: 1rem;
-  width: 95vw;
+  width: 100%;
   background: var(--pink);
   filter: url("#blob");
 
