@@ -113,12 +113,6 @@
     transform: scale(1);
     transition: transform var(--trasition-fast);
     cursor: pointer;
-
-.hero__ice:hover,
-.hero__ice:focus {
-    transform: scale(1.2);
-}
-
     @media screen and (min-width: $tablet) {
         top: 80px;
         left: 322px;
@@ -132,10 +126,16 @@
         height: auto;   
     }
 }
+
+.hero__ice:hover,
+.hero__ice:focus {
+    transform: scale(1.2);
+}
+
 .hero__circle{
     position: absolute;
     top: 75px;
-    right: -64px;
+    right: calc(5vw - 66px);
 
     z-index: 0;
     width: 345px;
@@ -146,14 +146,14 @@
     @media screen and (min-width: $tablet) {
         width: 334px;
         height: 334px;
-        right: 24vw;
         top: 43px;
+        right: 185px;
     }
     @media screen and (min-width: $comp){
         width: 534px;
         height: 534px;
-        right: 19vw;
         top: 54px;
+        right: 149px;
     }
 }
 .hero-box{
